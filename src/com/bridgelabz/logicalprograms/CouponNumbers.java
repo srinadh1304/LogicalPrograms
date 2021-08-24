@@ -35,7 +35,6 @@ public class CouponNumbers
 	public static int countDigits(int number)
 	{
 		int noOfDigits=0;
-		//int number=number;
 		while(number>0)
 		{
 			noOfDigits++;
