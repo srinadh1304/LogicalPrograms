@@ -17,10 +17,10 @@ public class Binary {
 
 	static void isPowerOf2(int swappedNumber) {
 		
-		int num = 1;
-		while(num <= swappedNumber) {
-			num *= 2;
-			if(num == swappedNumber) {
+		int powerOf2 = 1;
+		while(powerOf2 <= swappedNumber) {
+			powerOf2 *= 2;
+			if(powerOf2 == swappedNumber) {
 				System.out.println("It is a power of 2");
 				return;
 			}
