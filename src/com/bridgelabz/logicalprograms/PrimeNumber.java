@@ -4,32 +4,32 @@ public class PrimeNumber {
 
 	public static void main(String[] args) 
 	{
-		int number=2;
+		int isPrimeNumber=2;
 		boolean isPrime=true;
-		if(number==0)
+		if(isPrimeNumber==0)
 		{
 			System.out.println("The number 0 is not a Prime Number");
 		}
-		else if(number==1)
+		else if(isPrimeNumber==1)
 		{
 			System.out.println("The number 1 is not a Prime Number");
 		}
 		else
 		{
-			for(int index=2;index*index<=number;index++)
+			for(int number=2;number*number<=isPrimeNumber;number++)
 			{
-				if(number%index==0)
+				if(isPrimeNumber%number==0)
 				{
 					isPrime=false;
 				}
 			}
 			if(isPrime)
 			{
-				System.out.println("The number "+number+" is a Prime Number");
+				System.out.println("The number "+isPrimeNumber+" is a Prime Number");
 			}
 			else
 			{
-				System.out.println("The number "+number+" is not a Prime Number");
+				System.out.println("The number "+isPrimeNumber+" is not a Prime Number");
 			}
 		}
 
