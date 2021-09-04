@@ -11,13 +11,13 @@ public class VendingMachine
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the Change to be returned");
 		int amount = sc.nextInt();
-		getMinNotes(amount,0);
-		System.out.println("the number of notes required to be returned : "+ notes.size());
-		System.out.println("the notes are : "+notes);
+		getMinimumNoOfNotes(amount,0);
+		System.out.println("The number of notes required to be returned : "+ notes.size());
+		System.out.println("The notes are : "+notes);
 		sc.close();
 
 	}
-	private static void getMinNotes(int amount, int notePointer)
+	private static void getMinimumNoOfNotes(int amount, int notePointer)
 	{
 		if(amount == 0) return;
 		if(amount - availableNotes[notePointer] >= 0)
@@ -29,7 +29,7 @@ public class VendingMachine
 		{
 			++notePointer;
 		}
-		getMinNotes(amount,notePointer);
+		getMinimumNoOfNotes(amount,notePointer);
 	}
 
 }
