@@ -47,7 +47,6 @@ public class CouponNumbers
 	{
 
 		Scanner scannerObject = new Scanner(System.in);
-
 		System.out.println("Enter the number of distinct coupon numbers needed:");
 		numberOfCoupons = scannerObject.nextInt();
 		scannerObject.close();
