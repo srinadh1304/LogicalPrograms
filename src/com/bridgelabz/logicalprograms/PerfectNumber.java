@@ -7,11 +7,11 @@ public class PerfectNumber
 	{
 		int number=6;
 		int sum=0;
-		for(int index=2;index*index<=number;index++)
+		for(int startingIndex=2;startingIndex*startingIndex<=number;startingIndex++)
 		{
-				if(number%index==0)
+				if(number%startingIndex==0)
 				{
-					sum=sum+index+(number/index);
+					sum=sum+startingIndex+(number/startingIndex);
 				}
 		}
 		sum=sum+1;
