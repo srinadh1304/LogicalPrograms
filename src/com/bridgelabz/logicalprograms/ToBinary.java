@@ -12,15 +12,15 @@ public class ToBinary {
 
 	private static void toBinary(int number) {
 		int[] binaryNumber = new int[32];
-		int i=31;
+		int arrayIndex=31;
 		while(number >0) {
-			binaryNumber[i] = number % 2;
-			i--;
+			binaryNumber[arrayIndex] = number % 2;
+			arrayIndex--;
 			number = number /2;
 		}
 		System.out.println("The 4 Byte binary string is : ");
-		for(i=0;i<32;i++) {
-			System.out.print(binaryNumber[i]);
+		for(arrayIndex=0;arrayIndex<32;arrayIndex++) {
+			System.out.print(binaryNumber[arrayIndex]);
 		}
 	}
 
